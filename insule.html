@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stil.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Grecia</title>
+</head>
+<style>
+    .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+</style>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="acasa"><i class="fa fa-home fa-3x"></i></a>
+  <a href="#meniu" class="meniu">
+    <i class="fa fa-bars menu-icon fa-3x" onclick="openMenu()"></i>
+    <div id="container">
+      <div id="close" onclick="closeMenu()">✖</div>
+    <ul id="menu">
+      <li><a href="insule.html">INSULE</a></li>
+      <li><a href="cultura.html">CULTURA</a></li>
+      <li><a href="#">ALTELE</a></li>
+
+    </ul>    
+    </div> </a>
+</div>
+<script>
+    function openMenu()
+    {
+        document.getElementById('container').style.right='0%';
+        document.getElementById('menu').style.opacity='1';
+    }
+    function closeMenu()
+    {
+        document.getElementById('container').style.right='-100%';
+        document.getElementById('menu').style.opacity='0';
+    }
+
+</script>
+<div class="intro" id="intro">
+<h1>Insulele..</h1>
+<br>
+<h3>Insulele sunt principala caracteristică a morfologiei Greciei și o parte integrantă a culturii țării.</h3>
+<p>Țara include 6.000 de insule și insulițe împrăștiate în mările grecești , dintre care doar 227 de insule sunt locuite. Litoralul grecesc oferă un peisaj divers: plaje care se întind pe mulți kilometri, golfuri și golfuri adăpostite, plaje cu nisip, dune de nisip, plaje cu pietriș, zone umede și delte, peșteri formate din apă de mare și nisip de culoare închisă în zonele vulcanice.</p>
+</div>
+<div class="intro-poza" id="intro-poza">
+    <img src="imagini/hartagrecia.png" width="100%"  alt="literatura">
+</div>
