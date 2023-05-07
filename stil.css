@@ -1,91 +1,120 @@
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #3bbcd3c5;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stil.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Grecia</title>
+</head>
+<style>
+    .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
   overflow: hidden;
 }
+</style>
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 10px;
-}
+<body>
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="acasa"><i class="fa fa-home fa-3x"></i></a>
+  <a href="#meniu" class="meniu">
+    <i class="fa fa-bars menu-icon fa-3x" onclick="openMenu()"></i>
+    <div id="container">
+      <div id="close" onclick="closeMenu()">✖</div>
+    <ul id="menu">
+      <li><a href="insule.html">INSULE</a></li>
+      <li><a href="cultura.html">CULTURA</a></li>
+      <li><a href="#">ALTELE</a></li>
 
-/* Add an active class to highlight the current page */
-.topnav a.acasa {
-  float: left;
-  color: rgb(241, 247, 245);
-  margin-right: auto;
-  margin-left: 0;
-  margin: 8px;
-  font-size: 15px;
-  cursor: pointer;
+    </ul>    
+    </div> </a>
+</div>
+    
+
+<button class="accordion"><center><img src="imagini/istoria.jpg" width="45%"  alt="istoria"></center>ISTORIA</button>
+<div class="panel">
+    <p>Grecia a fost primul teritoriu din Europa unde au apărut civilizaţiile timpurii, începând cu civilizaţia Minoică în Creta, apoi civilizaţia Miceniană pe continent. Mai târziu, au apărut oraşe-state în peninsula greacă şi s-au răspândit pe ţărmurile Mării Negre, a Italiei Sudice, a Asiei Mici ajungând la prosperitate ceea ce a avut drept rezultat un boom cultural fără precedent, exprimat în arhitectură, dramă, ştiinţă şi filozofie, şi care a crescut şi s-a dezvoltat în Atena într-un climat democratic.
+    <br><b>Atena şi Sparta</b> au fost în fruntea respingerii Imperiului Persan într-o serie de bătălii. Ambele au fost însă umbrite de Teba şi în cele din urmă de Macedonia, care sub îndrumarea lui Alexandru cel Mare a unit şi a condus lumea greacă la victorie împotriva Persanilor, la prevestirea perioadei (erei) Elenistice, iar două secole mai târziu s-a stabilit dominaţia Romană asupra Greciei în 146 Î.Ch.. Amestecul ulterior al culturilor Romană şi Elenă a prins formă în întemeierea, în jurul Constantinopolului, a Imperiului Bizantin în 330 A.D., care timp de 1123 de ani a fost o putere culturală şi militară, până la căderea lui în mâinile Otomanilor în 1453. În ajunul erei Otomane intelectualitatea greacă a migrat spre vestul Europei, jucând un rol important în Renaşterea Europei Vestice prin transferul operelor grecilor antici în Europa Vestică. Cu toate acestea, sistemul otoman a contribuit la coeziunea grecilor Ortodocşi, jucând un rol important în formarea identităţii Greciei moderne.
+    <br>După Războiul Grec de Independenţă împotriva Imperiului Otoman (1821-1829), se cristalizează statul grec recunoscut prin Protocolul Londrei. În 1827, Ioannis Kapodistrias, un nobil grec din Insulele Ionice, a fost ales primul guvernator al noii Republici. Totuşi, după asasinarea lui, Marile Puteri au instalat o monarhie sub Otto, a Casei Bavareze Wittelsbach. În 1843, o răscoală l-a obligat pe rege să admită o constituţie şi o adunare reprezentativă. Regele a fost detronat în 1863 şi înlocuit cu Prinţul Vilhelm al Danemarcei, care şi-a luat numele de George I şi a adus cu el Insulele Ionice ca dar de încoronare din partea Britaniei. În 1877, Charialos Trikoupis, o figură dominantă a scenei politice greceşti care a fost înditruit cu îmbunătăţirea infrastructurii ţării, a ţinut în frâu puterea monarhiei de a se amesteca în adunare emiţând regula votului de încredere oricărui prim ministru potenţial.
+    <br>
+    <br>Grecia şi-a extins teritoriul şi populaţia ca rezultat al <b>Războaielor Balcanice</b>. În anii ce au urmat, lupta dintre regele Constantin I şi prim-ministru charismatic Eleftherios Venizelos cu privire la politica externă a ţării  în ajunul Primului Război Mondial, a dominat scena politică a ţării şi a împărţit ţara în două grupări opuse.Ca o consecinţă a Primului Război Mondial, Grecia a luptat împotriva naţionaliştilor turci conduşi de Mustafa Kemal, război care a avut drept rezultat o schimbare masivă de populaţie între cele două ţări conform Tratatului de la Lausanne. Urmştoarea perioadă a fost marcată de instabilitate şi de problema încorporării în societatea greacă a 1,5 milioane de refugiaţi greci din Asia Mică. La 28 octombrie 1940 Italia fascistă a cerut capitularea Greciei, dar dictatorul grec Ioannis Metaxas a refuzat şi în războiul Greco-Italian ce a urmat, Grecia a respins forţele italiene până în Albania, dând Aliaţilor prima lor victorie asupra forţelor Axei. Ţara a lichidat repede forţele germane în timpul Bătăliei Greciei.Ocupanţii germani s-au confruntat cu provocări serioase din partea Rezistenţei greceşti. 
+    <br>După eliberare, Grecia a trecut printr-un război civil între forţele comuniste şi regaliste, ceea ce a dus la distrugerea economiei şi la tensiuni sociale severe într Regalişti şi Comuniştii de stânga timp de 30 de ani.Următorii 20 de ani au fost caracterizaţi de marginalizarea stângii în sferele politic şi social, de o creştere semnificativă a economiei, sprijinită în parte de Planul Marshall.
+    <br>În 1965, o perioadă de turbulenţe politice a dus la lovitura de stat, la 21 aprilie 1967. În noiembrie 1973 Răscoala Politehnicii din Atena a fost un adevărat şoc pentru regim şi o contra-lovitură l-a stabilit pe Brigadier Dimitrios Ioannides ca dictator. În iulie 1974, Turcia a invadat insula Cipru iar regimul s-a prăbuşit.
+    <br>Fostul premier Constantine Karamanlis a fost invitat să revină de la Paris unde trăia într-un auto-exil din 1963, acest fapt marcând începutul erei Metapolitefsi.
+    <br>La 14 august 1974 forţele greceşti s-au retras din structura militară NATO ca protest la ocuparea nordului Ciprului de către turci.În 1975 s-a activizat o constituţie republicană democratică şi s-a abolit monarhia prin referendumul ţinut în acelaşi an. Între timp, Andreas Papandreou a fondat Partidul Socialist Panhellenic, sau PASOK, ca replică Partidului Noii Democraţii a lui Constantine Karamanlis: astfel cele două partied au dominat afacerile politice greceşti în următoarele decenii. Grecia a intrat din nou în NATO în 1980. Relaţiile cu vecinii turci s-au îmbunătăţit în ultima decadă, când ambele naţiuni au fost lovite de cutremure în vara lui 1999. Azi, Atena este un susţinător al aderării Turciei ca membru al U.E.
+    <br>Grecia a devenit cea de a 10-a membră a Uniunii Europene la 1 ianuarie 1981, şi de atunci naţiunea a experimentat o dezvoltare economică susţinută. Investiţiile majore în intreprinderi industriale şi infrastructură, precum şi fondurile de la U.E., beneficiile crescânde din turism, transportul maritime şi o creştere rapidă a sectorului servicii au dus ţara la un nivel de trai ridicat. Grecia a adoptat moneda Euro în 2001 şi a organizat cu succes Jocurile Olimpice din 2004 la Atena.</p>
+</div>
+
+<button class="accordion"><center><img src="imagini/mancare.jpg" width="45%"  alt="mancare"></center>GASTRONOMIA</button>
+<div class="panel">
+  <p>Gastronomia elenă descrie atitudinea grecilor faţă de viaţă şi hrană. Bucătaria grecească este una dintre cele mai tradiționale, îndrăgite şi variate bucătării din întreaga lume. Ingredientele şi stilurile acesteia au fost stabilite acum mai bine de 3000 ani.
+
+<br>În istorie s-au remarcat bucătari greci renumiţi, Archestratus a scris prima carte de bucate cunoscută. Soteriades îşi revendică titulatura de întelept prin felul în care prepară feluri de mâncare pentru diferite stări de spirit şi vârste (pentru tineri, pentru îndrăgostiţi, pentru filozofii antici). Bucătarii celebri locuiau în mănăstiri, unde si astăzi se scriu cărţi de bucate.În antichitate, bucătarul avea funcţie juridică, iar cei mai buni dintre ei erau angajaţi în casele celor bogaţi. Archestratus este considerat ca fiind părintele gastronomiei.</p>
+</div>
+
+<button class="accordion"><center><img src="imagini/arta.jpg" width="45%"  alt="arta"></center>ARTA</button>
+<div class="panel">
+  <p>Arta din Grecia antică a exercitat o mare influență asupra culturilor multor țări, în special în domeniul sculpturii și arhitecturii. Ea poate fi împărțită din punct de vedere stilistic în patru categorii: geometrică, arhaică, clasică, si elenistică. Spre deosebire de alte popoare antice, grecii, prin arta lor magnifică, au glorificat umanitatea.</p>
+  <center>
+    <iframe width="45%" height="400" src="https://www.youtube.com/embed/15vilcnw3BI"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </center>
+</div>
+
+<button class="accordion"><center><img src="imagini/literatura.jpg" width="45%"  alt="literatura"></center>LITERATURA</button>
+<div class="panel">
+    <p>Literatura Greciei antice se referă la literatura scrisă în greaca veche de la cele mai vechi opere scrise în limba greacă până în secolul al V-lea și ridicarea Imperiului Bizantin.
+        <br> Cele mai importante opere de la începuturile literaturii grecești îi aparțin lui Homer, <b>Iliada</b> și <b>Odiseea</b>. Celălalt mare poet al perioadei preclasice a fost Hesiod. Cele doua opere ale sale, care s-au păstrat până în prezent sunt <b>Munci și Zile și Teogonia</b>.</p><br>
+        <p> Literatura greacă modernă se referă la literatura scrisă în limba greacă începând cu secolul al XV-lea, desprinsă din literatura bizantină târzie, din secolul al XI-lea. <b>Erotokritos</b> este fără îndoială capodopera acestei perioade, și poate a literaturii grecești moderne. Este o romanță în versuri scrisă în jurul anului 1600 de Vitsentzos Kornaros (1553-1613). 
+            <br><b>Korakistika</b> (1819), un pamflet scris de Jakovakis Rizos Neroulos și îndreptat împotriva intelectualului grec Adamantios Korais, este un exemplu important al Renașterii grecești și a naționalismului apărut. 
+            <br>Poeții greci moderni Giorgos Seferis și Odysseus Elytis au fost distinși cu Premiul Nobel și, împreună cu Constantinos Kavafis, au fost cele mai importante figuri din literatura greacă a secolului XX. 
+            <br>În secolul XXI, Dimitris Lyacos, autorul trilogiei Poena Damni, s-a bucurat de o recunoaștere internațională extinsă și a fost, de asemenea, menționat pentru Premiul Nobel pentru Literatură.</p>
+    </div>
+    
+<script>
+  function openMenu()
+  {
+      document.getElementById('container').style.right='0%';
+      document.getElementById('menu').style.opacity='1';
+  }
+  function closeMenu()
+  {
+      document.getElementById('container').style.right='-100%';
+      document.getElementById('menu').style.opacity='0';
+  }
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
-.topnav a.cultura{
-  text-align: center;
-}
-.topnav a.meniu
-{
-    float: right;
-    margin-right: 0;
-    margin-left: auto;
-    margin: 8px;
-    font-size: 15px;
-    cursor: pointer;
-}
-#close
-{
-    margin: 20px;
-    float: right;
-    color: #000;
-   
-    font-size: 30px;
-    cursor: pointer;
-}
-#menu li a{
-    display: inline-block;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin: 5px 0px;
-    transition: all 0.3s ease;
-}
-#menu
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    list-style: none;
-    text-align: center;
-    opacity: 0;
-    transition: all 1s ease;
-}
-#container
-{
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    background: #e3e7f3;
-   
-}
-#menu li a:hover
-{
-    background-color: #a79595;
-    color: #fff;
-}
- 
+  </script>
+  </body>
